@@ -2,13 +2,13 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA-q4FzxNCfT1UfKqGCxxvO07y16lJRxIQ",
-  authDomain: "prod-app-e56ec.firebaseapp.com",
-  projectId: "prod-app-e56ec",
-  storageBucket: "prod-app-e56ec.appspot.com",
-  messagingSenderId: "284645203880",
-  appId: "1:284645203880:web:2d2a999b2f854b736c479d",
-  measurementId: "G-7XPEE2YW6Z"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
 };
 
 if (!firebase.apps.length) {
